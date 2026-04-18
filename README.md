@@ -3,11 +3,11 @@
  <h2 align="center">UCDT Processing GUI</h2>
  <p align="center">数字孪生城市模型处理核心 GUI</p>
 </p>
-<p align="center"> <img alt="Docker" src="https://img.shields.io/github/release/buildingdata/ucdt-processing-gui"> </p>
+<p align="center"> <img alt="version" src="https://img.shields.io/github/release/buildingdata/ucdt-processing-gui"> <img alt="issues" src="https://img.shields.io/github/issues/buildingdata/ucdt-processing-gui?color=F48D73"> <img alt="license" src="https://img.shields.io/github/license/buildingdata/ucdt-processing-gui"> </p>
 
 ## 项目简介
 
-UCDT Processing Core 是一个高性能的地理空间数据处理引擎，专为城市尺度建筑数据集设计，能够将原始建筑数据转换为结构化、网格化、可分析的输出，并附带丰富的属性信息（高程、土地利用、形态学特征）。
+UCDT Processing GUI 是一个高性能的地理空间数据处理引擎，专为城市尺度建筑数据集设计，能够将原始建筑数据转换为结构化、网格化、可分析的输出，并附带丰富的属性信息（高程、土地利用、形态学特征）。
 
 **适用场景：**
 - 城市尺度数据处理
