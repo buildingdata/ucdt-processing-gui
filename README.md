@@ -1,7 +1,7 @@
 <p align="center">
  <img width="100px" src="logo.svg" align="center" alt="Logo" />
- <h2 align="center">UCDT Processing Core</h2>
- <p align="center">数字孪生城市模型处理核心</p>
+ <h2 align="center">UCDT Processing GUI</h2>
+ <p align="center">数字孪生城市模型处理核心 GUI</p>
 </p>
 <p align="center"> <img alt="Docker" src="https://img.shields.io/github/release/buildingdata/ucdt-processing-gui"> </p>
 
