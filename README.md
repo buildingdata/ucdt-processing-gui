@@ -1,37 +1,29 @@
 <p align="center">
  <img width="100px" src="logo.svg" align="center" alt="Logo" />
  <h2 align="center">UCDT Processing GUI</h2>
- <p align="center">数字孪生城市模型处理核心 GUI</p>
+ <p align="center">Automated Urban Building Spatial Data Integration and Export</p>
 </p>
 <p align="center"> <img alt="version" src="https://img.shields.io/github/release/buildingdata/ucdt-processing-gui"> <img alt="issues" src="https://img.shields.io/github/issues/buildingdata/ucdt-processing-gui?color=F48D73"> <img alt="license" src="https://img.shields.io/github/license/buildingdata/ucdt-processing-gui"> </p>
 
-## 项目简介
+## Info
 
-UCDT Processing GUI 是一个高性能的地理空间数据处理引擎，专为城市尺度建筑数据集设计，能够将原始建筑数据转换为结构化、网格化、可分析的输出，并附带丰富的属性信息（高程、土地利用、形态学特征）。
+<img width="100px" src="assets/logo.png" align="right">
 
-**适用场景：**
-- 城市尺度数据处理
-- 能源模拟预处理
-- 数字孪生管线
-- 大规模批量执行（服务器端）
+本项目是 [UCDT Series 系列软件](https://ucdt-app.vercel.app/)中的一款产品。
 
-## 功能说明
+本项目为 UCDT Processing GUI （城市建筑空间数据自动化聚合和导出）核心算法的图形（GUI）界面程序，为便于使用而进行开发的。
 
-- ✅ **网格化处理**：支持米制/度制网格，自动 UTM 投影
-- ✅ **高程提取**：基于 DEM 栅格数据的建筑高程计算
-- ✅ **土地利用分类**：EULUC 数据匹配（最大相交/质心/最近邻）
-- ✅ **行政区划富化**：基于 `ChinaAdminDivisonSHP/District/district.shp` 自动匹配国家、省、市、区县属性
-- ✅ **特征工程**：几何特征、形态特征、空间指标（KDTree）
-- ✅ **楼层估算**：基于建筑类型的配置驱动估算
-- ✅ **多格式导出**：GeoJSON / GPKG / Excel (.xlsx) 按网格拆分或合并导出
-- ✅ **建筑 UID**：`building_uid` 基于 WGS84 质心生成 9 位 geohash，全球唯一且与瓦片/坐标系/网格无关
-- ✅ **并发处理**：线程分块处理，适合当前 GeoPandas / Shapely / Rasterio 工作负载
-- ✅ **双源建筑聚合**：ODbLPolygon + Polygon 自动合并去重，再统一做 LoD1 / DEM / EULUC / 行政区划 聚合
-- ✅ **预处理提速**：双源 GeoJSON 并行加载，行政区优先走代表点快路径，边界/歧义建筑仍回退到相交面积判定
-- ✅ **瓦片选择器**：GUI Spinner 控件，▲▼ 按钮 ±5° 步进选择瓦片
-- ✅ **双坐标模式**：经纬度 / 米制坐标可切换输入
-- ✅ **GUI 批量聚合**：数据聚合页支持导入 `example-city-center.csv` 风格任务表，按行顺序批量执行预处理
-- ✅ **CSV 批量导入**：通过 POINT_X, POINT_Y 坐标批量生成网格
+## UCDT Series
+
+| Name                                                 | Description                                                  |
+| ---------------------------------------------------- | ------------------------------------------------------------ |
+| <img width="200px" src="assets/ucdt-extraction.png"> | 🟣 Automated Urban Building Footprint Extraction<br>🟣 城市建筑轮廓自动提取 |
+| <img width="200px" src="assets/ucdt-processing.png"> | 🔵 Automated Urban Building Spatial Data Integration and Export<br/>🔵 城市建筑空间数据自动化聚合和导出 |
+| <img width="200px" src="assets/ucdt-computing.png">  | 🟠 Urban Building Energy and Carbon Emission Computing<br/>🟠 城市建筑能耗与碳排放计算 |
+| <img width="200px" src="assets/ucdt-analysis.png">   | 🔴 城市碳排放多尺度指标分析<br/>🔴 Multi-Scale Urban Carbon Emission Indicator Analysis |
+| <img width="200px" src="assets/ucdt-planning.png">   | 🟢 Decision Support for Low-Carbon Urban Planning and Design<br/>🟢 低碳城市规划设计决策 |
+
+![workflow](assets/link.png)
 
 ## License
 
